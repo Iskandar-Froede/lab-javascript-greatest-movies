@@ -34,9 +34,19 @@ function howManyMovies(moviesArray) {
   }
 
 
-
+/*
 // Iteration 3: All scores average - Get the average of all scores with 2 decimals
-function scoresAverage(moviesArray) {}
+function scoresAverage(moviesArray) {
+
+  // filter array not empty, and sure its float number
+
+let average = moviesArray.reduce((previousValue, movie) => {
+  previousValue + movie.score;
+}, 0 );
+  console.log(average / moviesArray.length)
+  return average / moviesArray.length
+}
+*/
 
 
 
@@ -45,8 +55,19 @@ function scoresAverage(moviesArray) {}
 // Iteration 4: Drama movies - Get the average of Drama Movies
 function dramaMoviesScore(moviesArray) {}
 
+
+
+
 // Iteration 5: Ordering by year - Order by year, ascending (in growing order)
-function orderByYear(moviesArray) {}
+function orderByYear(moviesArray) {
+let sortYear = moviesArray.sort(sortedAsc) => {
+
+  return sortedAsc.year
+}
+console.log(SortYear);
+}
+
+
 
 // Iteration 6: Alphabetic Order - Order by title and print the first 20 titles
 function orderAlphabetically(moviesArray) {}
